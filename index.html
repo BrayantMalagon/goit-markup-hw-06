@@ -61,6 +61,7 @@
             <input class="button-title" type="button" value="Solicite nuestro servicio" data-modal-open/>
           </div>
         </div>
+        <!-- Ventana Modal is-hidden-->
         <div class="backdrop" data-modal>
           <div class="modal">
             <button class="close-modal" data-modal-close>
@@ -68,6 +69,31 @@
               <use href="./images/icons.svg#icon-x"></use>
             </svg>
             </button>
+              <form class="form">
+                <h2>Deje sus datos, nos contactaremos con usted</h2>
+                <label class="form-label">Nombre
+                  <input type="text" name="name" autofocus />
+                  <svg class="form-icons">
+                    <use href="./images/icons.svg#icon-person"></use>
+                  </svg>
+                </label>
+                <label class="form-label">Teléfono
+                  <input type="tel" name="phone_number" />
+                </label>
+                <label class="form-label">E-mail
+                  <input type="email" name="email" />
+                </label>
+                <label class="form-label">Comentarios
+                  <textarea name="feedback" rows="5" placeholder="Introduzca el texto"></textarea>
+                </label>
+                <label class="form-label-politics">
+                  <input type="checkbox" name="policy-acceptance" />
+                  <p>
+                    Estoy de acuerdo con el boletín informativo y acepto los Términos y Condiciones
+                  </p> 
+                </label>
+                <button type="submit">Enviar</button>
+              </form>
           </div>
         </div>
       </main>
