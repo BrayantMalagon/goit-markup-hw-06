@@ -200,6 +200,8 @@ body {
 .icon-modal {
   width: 11px;
   height: 11px;
+  fill: var(--text-black);
+  transition: fill 250ms var(--cubic);
 }
 .close-modal {
   width: 30px;
@@ -211,8 +213,10 @@ body {
   margin-left: 91%;
   padding: 0%;
 }
-.close-modal:hover {
+.close-modal:hover,
+.close-modal:hover .icon-modal {
   cursor: pointer;
+  fill: var(--main-color);
 }
 
 /* ------ Formulario Modal ------ */
@@ -241,16 +245,49 @@ body {
   margin-bottom: 10px;
   margin-top: 4px;
 }
+.form-label-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  height: 40px;
+  width: 100%;
+  transition: border 250ms var(--cubic);
+}
 .form-icons {
   width: 12px;
   height: 12px;
   fill: var(--text-black);
+  margin-left: 15px;
+  margin-right: 15px;
+  transition: fill 250ms var(--cubic);
+}
+.form-label-input {
+  border: 1px solid rgba(255, 255, 255, 0);
+  width: 100%;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--text-black);
+}
+.form-label:hover {
+  cursor: pointer;
+}
+.form-label:hover .form-label-box {
+  border: 1px solid var(--main-color);
+}
+.form-label:hover .form-icons {
+  fill: var(--main-color);
 }
 .form-label-politics {
   display: flex;
   align-items: flex-start;
   margin-left: auto;
   margin-right: auto;
+}
+.form-label-politics:hover {
+  cursor: pointer;
 }
 .form-label-politics p {
   font-family: 'Roboto';
@@ -262,7 +299,24 @@ body {
   margin-top: -1px;
   margin-left: 10px;
 }
-
+.form-button-submit {
+  width: 200px;
+  height: 50px;
+  background-color: var(--main-color);
+  margin-left: auto;
+  margin-right: auto;
+  border: 0;
+  border-radius: 4px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  color: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.form-button-submit:hover {
+  cursor: pointer;
+}
 /* ----- Primera sección valores --------- */
 .section-values {
   display: flex;

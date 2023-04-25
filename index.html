@@ -72,16 +72,28 @@
               <form class="form">
                 <h2>Deje sus datos, nos contactaremos con usted</h2>
                 <label class="form-label">Nombre
-                  <input type="text" name="name" autofocus />
-                  <svg class="form-icons">
-                    <use href="./images/icons.svg#icon-person"></use>
-                  </svg>
+                  <div class="form-label-box">
+                    <svg class="form-icons">
+                      <use href="./images/icons.svg#icon-person"></use>
+                    </svg>
+                    <input class="form-label-input" class="form-label-input" type="text" name="name"/>
+                  </div>
                 </label>
                 <label class="form-label">Teléfono
-                  <input type="tel" name="phone_number" />
+                  <div class="form-label-box">
+                    <svg class="form-icons">
+                      <use href="./images/icons.svg#icon-telephone"></use>
+                    </svg>
+                    <input class="form-label-input" type="tel" name="phone_number" />
+                  </div>
                 </label>
                 <label class="form-label">E-mail
-                  <input type="email" name="email" />
+                  <div class="form-label-box">
+                    <svg class="form-icons">
+                      <use href="./images/icons.svg#icon-email"></use>
+                    </svg>
+                    <input class="form-label-input" type="email" name="email" />
+                </div>
                 </label>
                 <label class="form-label">Comentarios
                   <textarea name="feedback" rows="5" placeholder="Introduzca el texto"></textarea>
@@ -92,7 +104,7 @@
                     Estoy de acuerdo con el boletín informativo y acepto los Términos y Condiciones
                   </p> 
                 </label>
-                <button type="submit">Enviar</button>
+                <button class="form-button-submit" type="submit">Enviar</button>
               </form>
           </div>
         </div>
